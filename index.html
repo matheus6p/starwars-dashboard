@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Star Wars Dashboard</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <div class="custom-container">
+      <div class="menu-lateral">
+        <img src="assets/logo.png">
+        <div class="menu-items">
+          <ul>
+
+            <li>
+              <img src="assets/dashboard.svg" alt="">
+                <p>Dashboard</p>
+              </img>
+            </li>
+
+            <li>
+              <img src="assets/personagens.svg" alt="">
+                <p>Personagens</p>
+              </img>
+            </li>
+
+            <li>
+              <img src="assets/planetas.svg" alt="">
+                <p>Planetas e Luas</p>
+              </img>
+            </li>
+
+            <li>
+              <img src="assets/nave.svg" alt="">
+                <p>Naves</p>
+              </img>
+            </li>
+
+          </ul>
+        </div>
+        <div class="settings">
+          <i data-feather="settings"></i>
+          <p>Configurações</p>
+        </div>
+      </div>
+
+      <div class="content">
+      <div class="cards-header">
+        
+        <div class="card card-small">
+          <div class="card-content">
+            <div class="card-info">
+              <p>Personagens</p>
+              <h2 id="personagens">
+                <div class="spinner-border text-danger" role="status">
+                  <span class="sr-only"></span>
+                </div>
+              </h2>
+            </div>
+            <img src="assets/personagens-black.svg">
+          </div>
+        </div>
+        <div class="card card-large">
+          <div class="card-container">
+            <div class="card-content">
+              <div class="card-info">
+                <p>Luas</p>
+                <h2 id="luas"><div class="spinner-border text-danger" role="status">
+                  <span class="sr-only"></span>
+                </div></h2>
+              </div>
+              <img src="assets/luas-black.svg">
+            </div>
+            <div class="card-content">
+              <div class="card-info">
+                <p>Planetas</p>
+                <h2 id="planetas"><div class="spinner-border text-danger" role="status">
+                  <span class="sr-only"></span>
+                </div></h2>
+              </div>
+              <img src="assets/planetas-black.svg">
+            </div>
+          </div>
+        </div>
+        <div class="card card-small">
+          <div class="card-content">
+            <div class="card-info">
+              <p>Naves</p>
+              <h2 id="naves"><div class="spinner-border text-danger" role="status">
+                <span class="sr-only"></span>
+              </div></h2>
+            </div>
+            <img src="assets/nave-black.svg">
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script>
+      feather.replace()
+    </script>
+  </body>
+</html>
